@@ -49,7 +49,6 @@
   <action id="Refactorings.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="ctrl t" />
   </action>
-  <action id="ReformatCode" />
   <action id="Replace">
     <keyboard-shortcut first-keystroke="ctrl h" />
   </action>
