@@ -1,0 +1,17 @@
+<templateSet group="Vue">
+  <template name="vtest" value="import {shallowMount, mount} from '@vue/test-utils';&#10;import expect from 'expect';&#10;import $VUE$ from '../../resources/assets/js/components/$VUE$';&#10;import moxios from 'moxios';&#10;&#10;let wrapper;&#10;&#10;describe('$DESCRIPTION$', () =&gt; {&#10;&#10;    beforeEach(() =&gt; {&#10;        moxios.install(axios);&#10;        wrapper = shallowMount(&#10;            $VUE$,&#10;            {&#10;                propsData: {&#10;                    $PROPS$&#10;                }&#10;            }&#10;        );&#10;    });&#10;&#10;    afterEach(() =&gt; {&#10;        moxios.uninstall(axios);&#10;    });&#10;&#10;    it.only('$TEST_DESCRIPTION$', () =&gt; {&#10;        $END$&#10;    });&#10;});" description="Vue Test base" toReformat="false" toShortenFQNames="true">
+    <variable name="VUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEST_DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="VUE_COMPONENT_DESCRIPTOR" value="false" />
+      <option name="VUE_INSIDE_TAG" value="false" />
+      <option name="VUE_SCRIPT" value="false" />
+      <option name="VUE_TEMPLATE" value="false" />
+      <option name="VUE_TOP_LEVEL" value="false" />
+      <option name="Vue" value="true" />
+    </context>
+  </template>
+</templateSet>

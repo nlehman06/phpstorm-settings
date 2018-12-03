@@ -1,0 +1,70 @@
+<templateSet group="user">
+  <template name="textfield" value="&lt;!-- $VALUE$ Form Input --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$', '$VALUE$:') }}&#10;    {{ Form::text('$NAME$', null, ['class' =&gt; 'form-control']) }}&#10;&lt;/div&gt;" description="Form text field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="password" value="&lt;!-- $VALUE$ Form Password --&gt;&#10;&lt;div class=&quot;form-group&quot;&gt;&#10;    {{ Form::label('$NAME$', '$VALUE$:') }}&#10;    {{ Form::password('$NAME$', ['class' =&gt; 'form-control']) }}&#10;&lt;/div&gt;" description="Form password field" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalize(NAME)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cs1" value="console.log($var$);" description="Console logging" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rjson" value="return Response::json(['success' =&gt; 'true'], 200, [], JSON_NUMERIC_CHECK);" description="Return json" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="compo" value="(function (angular) {&#10;    &quot;use strict&quot;;&#10;    &#10;    var version = 1;&#10;&#10;    angular.module('routerApp')&#10;        .component('dlc$tagName$', {&#10;            templateUrl: '/views/$pathToTemplate$?v=' + version,&#10;            controller: $controllerFunction$,&#10;            controllerAs: '$controllerAbreviation$'&#10;        });&#10;&#10;    function $controllerFunction$($service$) {&#10;        var $controllerAbreviation$ = this;&#10;        $controllerAbreviation$.version = version;&#10;        $END$&#10;    }&#10;})(window.angular);" description="Create Angular component" toReformat="true" toShortenFQNames="true">
+    <variable name="tagName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="pathToTemplate" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerFunction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerAbreviation" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="spinner" value="&lt;p class=&quot;text-center&quot; ng-show=&quot;$sc$.loading&quot;&gt;&lt;span class=&quot;fa fa-circle-o-notch fa-5x fa-spin&quot;&gt;&lt;/span&gt;&lt;/p&gt;" description="Create a loading spinner" toReformat="true" toShortenFQNames="true">
+    <variable name="sc" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="/** @test */&#10;public function $methodName$()&#10;{&#10;    $END$&#10;}" description="New test method" toReformat="true" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="btest" value="/** @test&#10; * @throws \Throwable&#10; */&#10;public function $methodName$()&#10;{&#10;    $this-&gt;browse(function (Browser $browser) {&#10;        $browser-&gt;$END$&#10;    });&#10;}" description="New browser test method" toReformat="true" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="pre" value="&lt;pre&gt;{{ $END$ | json }}&lt;/pre&gt;" description="Display angular data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="srv" value="$service$.$method$($params$)&#10;                .then(function (data) {&#10;                    if (data.success === 'true') {&#10;                        $END$&#10;                    } else {&#10;                        console.log(data);&#10;                    }&#10;                }, function (response) {&#10;                    console.log(response);&#10;                })" description="Make an Angular service call with promise" toReformat="true" toShortenFQNames="true">
+    <variable name="service" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
