@@ -14,4 +14,11 @@
       <option name="Vue" value="true" />
     </context>
   </template>
+  <template name="vmodule" value="&lt;template v-cloak&gt;&#10;  &lt;v-fade-transition&gt;&#10;    &lt;div v-show=&quot;!loading&quot;&gt;&#10;      &lt;v-toolbar flat&gt;&#10;        &lt;v-toolbar-title class=&quot;font-weight-thin display-2&quot;&gt;&#10;          $Permissions$&#10;        &lt;/v-toolbar-title&gt;&#10;      &lt;/v-toolbar&gt;&#10;    &lt;/div&gt;&#10;  &lt;/v-fade-transition&gt;&#10;&lt;/template&gt;&#10;&#10;&lt;script&gt;&#10;import { mapState } from &quot;vuex&quot;;&#10;export default {&#10;  name: &quot;$permissions$&quot;,&#10;  computed: {&#10;    ...mapState([&quot;loading&quot;])&#10;  }$END$&#10;};&#10;&lt;/script&gt;&#10;" description="Standard view for a module" toReformat="false" toShortenFQNames="true">
+    <variable name="Permissions" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="permissions" expression="decapitalize(Permissions)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="Vue" value="true" />
+    </context>
+  </template>
 </templateSet>
