@@ -4,6 +4,10 @@
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
+  <template name="it" value="it(&quot;should $NAME$&quot;, () =&gt; {&#10;  $END$&#10;}); " description="Inserts it() block" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
   <template name="itm" value="it(&quot;$NAME$&quot;, done =&gt; {&#10;    moxios.stubRequest(&quot;https://momentum-intranet-api.test/api/$URL$&quot;, {&#10;      status: 200,&#10;      response: {&#10;        $END$&#10;      }&#10;    });&#10;&#10;    moxios.wait(() =&gt; {&#10;      done();&#10;    });&#10;  });" description="Inserts it() block with moxios" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
