@@ -1,7 +1,7 @@
 <templateSet group="JavaScript Testing">
   <template name="descr" value="import Vue from &quot;vue&quot;;&#10;import moxios from &quot;moxios&quot;;&#10;import $COMPONENT$ from &quot;@/views/$COMPONENT$&quot;;&#10;import { mount } from &quot;@vue/test-utils&quot;;&#10;import { see, click, type } from &quot;../helpers/TestWrappers&quot;;&#10;import $axios from &quot;@/axios-instance&quot;;&#10;import Vuetify from &quot;vuetify&quot;;&#10;import Vuex from &quot;vuex&quot;;&#10;import VueRouter from &quot;vue-router&quot;;&#10;&#10;Vue.use(Vuetify);&#10;Vue.use(VueRouter);&#10;&#10;const router = new VueRouter();&#10;&#10;describe(&quot;$NAME$&quot;, () =&gt; {&#10;  let wrapper;&#10;&#10;  beforeEach(() =&gt; {&#10;    moxios.install($axios);&#10;&#10;    const store = new Vuex.Store({&#10;      state: {}&#10;    });&#10;&#10;    wrapper = mount($COMPONENT$, {&#10;      router,&#10;      mocks: {&#10;        $store: store,&#10;        $axios&#10;      },&#10;      sync: false&#10;    });&#10;  });&#10;&#10;  afterEach(() =&gt; {&#10;    moxios.uninstall($axios);&#10;  });&#10;  $END$&#10;});&#10;" description="Inserts describe() block" toReformat="true" toShortenFQNames="true">
-    <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="false" />
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="false" />
+    <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
   <template name="itm" value="it(&quot;$NAME$&quot;, done =&gt; {&#10;    moxios.stubRequest(&quot;https://momentum-intranet-api.test/api/$URL$&quot;, {&#10;      status: 200,&#10;      response: {&#10;        $END$&#10;      }&#10;    });&#10;&#10;    moxios.wait(() =&gt; {&#10;      done();&#10;    });&#10;  });" description="Inserts it() block with moxios" toReformat="false" toShortenFQNames="true">
