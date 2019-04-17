@@ -1,0 +1,13 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="specifications" type="HTML" />
+      <mapping pattern="NTLMStream" type="PHP" />
+      <mapping pattern="ImportExistingSR" type="PHP" />
+      <mapping pattern="Reps" type="PHP" />
+      <mapping pattern=".env.dusk.local" type="PLAIN_TEXT" />
+      <mapping pattern=".env.dusk.test_production" type="PLAIN_TEXT" />
+      <mapping ext="py" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
