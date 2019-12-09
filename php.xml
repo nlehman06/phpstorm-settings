@@ -1,11 +1,5 @@
 <application>
-  <component name="MessDetector">
-    <phpmd_settings_migrated />
-  </component>
   <component name="PhpAutoImport" auto_import_file_scope="true" global_class_behavior="PREFER_IMPORT" global_constant_behavior="PREFER_IMPORT" />
-  <component name="PhpCodeSniffer">
-    <phpcs_settings_migrated />
-  </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="1b1521ef-6db5-43de-8719-be4271f6af8c" name="PHP 7.1" home="\usr\bin\php" debugger_id="php.debugger.XDebug" />
@@ -151,51 +145,11 @@
           </loaded_extensions>
         </phpinfo>
       </interpreter>
-      <interpreter name="PHP 7.2">
-        <phpinfo binary_type="PHP" php_cgi="C:\Users\nlehman\php\php-cgi.exe" php_cli="C:\Users\nlehman\php\php.exe" path_separator=";" version="7.2.8">
-          <additional_php_ini />
-          <configuration_file>C:\Users\nlehman\php\php.ini</configuration_file>
-          <configuration_options>
-            <configuration_option name="include_path" value=".;C:\php\pear" />
-          </configuration_options>
-          <debuggers />
-          <loaded_extensions>
-            <extension name="Core" />
-            <extension name="PDO" />
-            <extension name="Phar" />
-            <extension name="Reflection" />
-            <extension name="SPL" />
-            <extension name="SimpleXML" />
-            <extension name="bcmath" />
-            <extension name="calendar" />
-            <extension name="ctype" />
-            <extension name="date" />
-            <extension name="dom" />
-            <extension name="filter" />
-            <extension name="hash" />
-            <extension name="iconv" />
-            <extension name="json" />
-            <extension name="libxml" />
-            <extension name="mysqlnd" />
-            <extension name="pcre" />
-            <extension name="readline" />
-            <extension name="session" />
-            <extension name="standard" />
-            <extension name="tokenizer" />
-            <extension name="wddx" />
-            <extension name="xml" />
-            <extension name="xmlreader" />
-            <extension name="xmlwriter" />
-            <extension name="zip" />
-            <extension name="zlib" />
-          </loaded_extensions>
-        </phpinfo>
-      </interpreter>
     </phpInfoCache>
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
-      <phpunit_by_interpreter interpreter_id="b93c7ef7-a90d-4a6d-a0df-6a717b7ebf13" load_method="CUSTOM_LOADER" configuration_file_path="/home/nlehman/code/nlehman/phpunit.xml" custom_loader_path="/home/nlehman/code/nlehman/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
+      <phpunit_by_interpreter interpreter_id="b93c7ef7-a90d-4a6d-a0df-6a717b7ebf13" configuration_file_path="/home/nlehman/code/nlehman/phpunit.xml" custom_loader_path="/home/nlehman/code/nlehman/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
     </phpunit_settings>
   </component>
 </application>
